@@ -7,6 +7,9 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
+  mountOptions:
+    - nfsvers=4
+      port=30000
   persistentVolumeReclaimPolicy: Recycle
   nfs:
     server: 172.31.117.101

@@ -21,3 +21,6 @@ spec:
           - name: jenkins-home
             mountPath: /var/jenkins_home
       volumes:
+        - name: nfsshare
+          persistentVolumeClaim:
+            claimName: jenkins-pvc
